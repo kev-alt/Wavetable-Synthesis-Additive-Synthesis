@@ -16,7 +16,7 @@ function gitar_sentez_uygulamasi()
     waveformLabel = uicontrol('Style', 'text', 'Position', [350, 250, 100, 20], ...
         'String', 'Dalga Formu:');
     waveformMenu = uicontrol('Style', 'popupmenu', 'Position', [350, 230, 100, 20], ...
-        'String', {'Sinüs', 'Üçgen', 'Testere', 'Kare'});
+        'String', {'Sinüs', 'Uçgen', 'Testere', 'Kare'});
 
     % --- Grafik alanı ---
     ax = axes('Parent', fig, 'Position', [0.1 0.1 0.8 0.4]);
@@ -47,7 +47,7 @@ function ses_uret(sentezMenu, notaMenu, waveformMenu, ax)
 
     frekanslar = [261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88];
     notalar = {'Do', 'Re', 'Mi', 'Fa', 'Sol', 'La', 'Si'};
-    waveformNames = {'Sinus', 'Uctgen', 'Testere', 'Kare'};
+    waveformNames = {'Sinüs', 'Uçgen', 'Testere', 'Kare'};
     sentezTipiAdlari = {'Wavetable', 'Additive'};
 
     notaIdx = get(notaMenu, 'Value');
